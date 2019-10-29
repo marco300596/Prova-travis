@@ -11,3 +11,7 @@ secure: "82a814249a14a270497f5033064b061a87cd3831"
 script:
 - ant build
 - sonar-scanner
+
+cache:
+  directories:
+    - '$HOME/.sonar/cache'
