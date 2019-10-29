@@ -1,13 +1,13 @@
 language: java
 jdk:
-- openjdk8
+ - openjdk8
 
-addons:
-sonarcloud:
-organization: marco300596-github
-token:
-secure: 82a814249a14a270497f5033064b061a87cd3831
+ addons:
+  sonarcloud:
+   organization: marco300596-github
+   token:
+    secure: 82a814249a14a270497f5033064b061a87cd3831
 
-script:
-- ant build
-- sonar-scanner
+ script:
+  -ant build
+  -sonar-scanner
