@@ -1,7 +1,12 @@
 package hello;
 
+import java.util.logging.Logger;
+
 public class Hello {
+	
+	static Logger logger = Logger.getLogger(Hello.class.getName());
+	
 	public static void main(String[] args) {
-		System.out.println("Hello, figlio di puttana")//NOPMD;
+		logger.info("Hello, figlio di puttana");
 	}
 }
